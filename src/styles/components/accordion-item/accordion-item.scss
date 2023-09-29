@@ -1,0 +1,21 @@
+.AccordionItem {
+  $this: &;
+
+  #{$this}__Header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #{$this}__Content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 300ms ease-in-out;
+  }
+
+  &[aria-expanded="true"] {
+    #{$this}__Content {
+      max-height: var(--content-height);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.Section {
+  $this: &;
+
+  padding: 1rem 0;
+
+  @include breakpoints.laptop-and-up {
+    padding: 2rem 0;
+  }
+
+  &#{$this}--High {
+    background-color: color.$background-high;
+  }
+
+  #{$this}__Inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: sizes.$page-width;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @include breakpoints.laptop-and-up {
+      gap: 2rem;
+      padding: 0 2rem;
+    }
+  }
+
+  #{$this}__Header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

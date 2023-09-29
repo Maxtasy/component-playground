@@ -1,0 +1,31 @@
+// Tokens.
+
+@use './styles/tokens/color.scss';
+@use './styles/tokens/typography.scss';
+@use './styles/config/sizes.scss';
+@use './styles/config/breakpoints.scss';
+
+// Components.
+
+@import './styles/components/typography/text/text.scss';
+@import './styles/components/typography/heading/heading.scss';
+@import './styles/components/typography/link/link.scss';
+@import './styles/components/flow/stack/stack.scss';
+@import './styles/components/section/section.scss';
+@import './styles/components/button/button.scss';
+@import './styles/components/accordion-item/accordion-item.scss';
+
+// Sections.
+
+@import './styles/sections/header/header.scss';
+@import './styles/sections/footer/footer.scss';
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Main {
+  flex-grow: 1;
+}

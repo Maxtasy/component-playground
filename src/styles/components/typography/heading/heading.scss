@@ -1,0 +1,19 @@
+.Heading {
+  $this: &;
+
+  color: color.$heading;
+  font-family: typography.$heading;
+  line-height: 1.2;
+
+  &#{$this}--H1 {
+    font-size: typography.$ms3;
+  }
+
+  &#{$this}--H2 {
+    font-size: typography.$ms2;
+  }
+
+  &#{$this}--H3 {
+    font-size: typography.$ms1;
+  }
+}

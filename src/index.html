@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="base-style.css">
+  <link rel="stylesheet" href="style.scss">
+  <script src="script.js" type="module" defer></script>
+  <title>Component Playground</title>
+</head>
+<body>
+  <header class="Header">
+    <div class="Header__Inner">
+      Header
+    </div>
+  </header>
+
+  <main class="Main">
+    <section class="Section">
+      <div class="Section__Inner">
+        <div class="Section__Header">
+          <h2 class="Heading Heading--H2">Text Components</h2>
+        </div>
+  
+        <div class="Section__Content">
+          <div class="Stack Stack--Vertical">
+            <h2 class="Heading Heading--H1">Heading 1</h2>
+  
+            <h2 class="Heading Heading--H2">Heading 2</h2>
+  
+            <h2 class="Heading Heading--H3">Heading 3</h2>
+  
+            <p class="Text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+            <a href="#" class="Link">Link</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="Section">
+      <div class="Section__Inner">
+        <div class="Section__Header">
+          <h2 class="Heading Heading--H2">Buttons</h2>
+        </div>
+  
+        <div class="Section__Content">
+          <div class="Stack Stack--Vertical Stack--AlignStart">
+            <button class="Button Button--Primary">Primary</button>
+    
+            <button class="Button Button--Secondary">Secondary</button>
+  
+            <button class="Button Button--Secondary Button--FullWidth">Full Width</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="Section">
+      <div class="Section__Inner">
+        <div class="Section__Header">
+          <h2 class="Heading Heading--H2">Section: Default</h2>
+        </div>
+  
+        <div class="Section__Content">
+          <div class="Stack Stack--Vertical Stack--AlignStart">
+            <div class="Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eaque. Voluptatibus optio fugiat voluptate porro ipsum! Nisi, voluptatem. Facere enim vel eius neque quis ipsa autem quidem nulla cupiditate animi!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="Section Section--High">
+      <div class="Section__Inner">
+        <div class="Section__Header">
+          <h2 class="Heading Heading--H2">Section: High</h2>
+        </div>
+  
+        <div class="Section__Content">
+          <div class="Stack Stack--Vertical Stack--AlignStart">
+            <div class="Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eaque. Voluptatibus optio fugiat voluptate porro ipsum! Nisi, voluptatem. Facere enim vel eius neque quis ipsa autem quidem nulla cupiditate animi!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="Section">
+      <div class="Section__Inner">
+        <div class="Section__Header">
+          <h2 class="Heading Heading--H2">Accordion</h2>
+        </div>
+  
+        <div class="Section__Content">
+          <div class="Stack Stack--Vertical Stack--AlignStart">
+            <c-accordion class="Accordion">
+              <div class="Stack Stack--Vertical">
+                <c-accordion-item class="AccordionItem" aria-expanded="false">
+                  <button class="AccordionItem__Header">
+                    <p class="Heading Heading--H3">Item 1</p>
+                    <span>+</span>
+                  </button>
+  
+                  <div class="AccordionItem__Content">Content</div>
+                </c-accordion-item>
+  
+                <c-accordion-item class="AccordionItem" aria-expanded="false">
+                  <button class="AccordionItem__Header">
+                    <p class="Heading Heading--H3">Item 2</p>
+                    <span>+</span>
+                  </button>
+  
+                  <div class="AccordionItem__Content">Content</div>
+                </c-accordion-item>
+  
+                <c-accordion-item class="AccordionItem" aria-expanded="false">
+                  <button class="AccordionItem__Header">
+                    <p class="Heading Heading--H3">Item 3</p>
+                    <span>+</span>
+                  </button>
+  
+                  <div class="AccordionItem__Content">Content</div>
+                </c-accordion-item>
+              </div>
+            </c-accordion>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="Footer">
+    <div class="Footer__Inner">
+      Footer
+    </div>
+  </footer>
+</body>
+</html>

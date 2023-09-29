@@ -1,0 +1,22 @@
+.Stack {
+  $this: &;
+
+  display: flex;
+  gap: 1rem;
+
+  &#{$this}--Vertical {
+    flex-direction: column;
+  }
+
+  &#{$this}--AlignStart {
+    align-items: flex-start;
+  }
+
+  &#{$this}--AlignEnd {
+    align-items: flex-end;
+  }
+
+  &#{$this}--AlignCenter {
+    align-items: center;
+  }
+}

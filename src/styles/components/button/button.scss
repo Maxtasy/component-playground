@@ -1,0 +1,48 @@
+.Button {
+  $this: &;
+
+  display: inline-block;
+  border: 1px solid transparent;
+  font-size: typography.$ms1;
+
+  &#{$this}--Primary,
+  &#{$this}--Secondary {
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: typography.$bold;
+    font-family: typography.$button;
+    letter-spacing: 2px;
+  }
+
+  &#{$this}--Primary {
+    color: color.$button-text-primary;
+    background-color: color.$button-background-primary;
+    border-color: color.$button-border-primary;
+
+    &:hover {
+      background-color: color.$button-background-primary-hover;
+    }
+
+    &:focus-visible {
+      outline: 4px solid color.$outline;
+    }
+  }
+
+  &#{$this}--Secondary {
+    color: color.$button-text-secondary;
+    background-color: color.$button-background-secondary;
+    border-color: color.$button-border-secondary;
+
+    &:hover {
+      background-color: color.$button-background-secondary-hover;
+    }
+
+    &:focus-visible {
+      outline: 4px solid color.$outline;
+    }
+  }
+
+  &#{$this}--FullWidth {
+    width: 100%;
+  }
+}

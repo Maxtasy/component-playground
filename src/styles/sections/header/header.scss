@@ -1,0 +1,17 @@
+.Header {
+  $this: &;
+
+  padding: 1rem 0;
+  background-color: color.$background-high;
+  border-bottom: 1px solid color.$border;
+
+  #{$this}__Inner {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: sizes.$page-width;
+
+    @include breakpoints.laptop-and-up {
+      padding: 0 2rem;
+    }
+  }
+}
